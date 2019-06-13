@@ -2,7 +2,7 @@
 
 本项目在Docker中部署arcgis api for javascript 
 
-参考地址：https://developers.arcgis.com/javascript/latest/guide/get-api/ [https://developers.arcgis.com/javascript/latest/guide/get-api/]
+参考地址：https://developers.arcgis.com/javascript/latest/guide/get-api/ 
 
 
 本项目使用 asp.net core 2.2，启动时检查api地址是否正常
