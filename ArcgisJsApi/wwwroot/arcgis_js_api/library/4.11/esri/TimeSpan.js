@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.11/esri/copyright.txt for details.
+//>>built
+define("require exports ./core/tsSupport/declareExtendsHelper ./core/tsSupport/decorateHelper ./core/JSONSupport ./core/accessorSupport/decorators ./layers/support/timeUtils".split(" "),function(h,k,f,d,g,b,c){return function(e){function a(a){a=e.call(this)||this;a.value=0;a.unit=null;return a}f(a,e);d([b.property({type:Number,json:{write:!0}})],a.prototype,"value",void 0);d([b.property({type:c.timeUnitKebabDictionary.apiValues,json:{type:c.timeUnitKebabDictionary.jsonValues,read:c.timeUnitKebabDictionary.read,
+write:c.timeUnitKebabDictionary.write}})],a.prototype,"unit",void 0);return a=d([b.subclass("esri.TimeSpan")],a)}(b.declared(g))});

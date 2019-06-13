@@ -1,0 +1,4 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.11/esri/copyright.txt for details.
+//>>built
+define("require exports ../../../../symbols ../../../../symbols/MeshSymbol3D ./Graphics3DSymbol ./Graphics3DWebStyleSymbol".split(" "),function(h,b,c,d,e,f){Object.defineProperty(b,"__esModule",{value:!0});b.getGraphics3DSymbol=function(a){return a instanceof f?a.graphics3DSymbol:a instanceof e?a:null};b.getDefaultSymbol=function(a){if(!a||!a.geometry)return null;switch(a.geometry.type){case "mesh":return g}return null};var g=new d({symbolLayers:[new c.FillSymbol3DLayer]})});

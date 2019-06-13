@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.11/esri/copyright.txt for details.
+//>>built
+define("require exports ../../core/tsSupport/declareExtendsHelper ../../core/tsSupport/decorateHelper ../../core/JSONSupport ../../core/accessorSupport/decorators ./BuildingFilterMode ./BuildingFilterModeSolid ./BuildingFilterModeWireframe".split(" "),function(m,n,e,c,f,b,g,h,k){var l={types:{key:"type",base:g,typeMap:{solid:h,wireframe:k}}};return function(d){function a(){var a=null!==d&&d.apply(this,arguments)||this;a.filterExpression=null;a.filterMode=null;a.title=null;return a}e(a,d);c([b.property({type:String})],
+a.prototype,"filterExpression",void 0);c([b.property(l)],a.prototype,"filterMode",void 0);c([b.property({type:String})],a.prototype,"title",void 0);return a=c([b.subclass("esri.layers.buildingSublayers.BuildingFilterBlock")],a)}(b.declared(f))});

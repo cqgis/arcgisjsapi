@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.11/esri/copyright.txt for details.
+//>>built
+define("require exports ../../core/tsSupport/declareExtendsHelper ../../core/tsSupport/decorateHelper ../../core/Accessor ../../core/accessorSupport/decorators ../../layers/support/TimeInfo ../support/fieldUtils".split(" "),function(k,l,e,d,f,b,g,h){return function(c){function a(){return null!==c&&c.apply(this,arguments)||this}e(a,c);Object.defineProperty(a.prototype,"timeInfo",{set:function(a){h.fixTimeInfoFields(a,this.fields);this._set("timeInfo",a)},enumerable:!0,configurable:!0});d([b.property({value:null,
+type:g,json:{write:!0}})],a.prototype,"timeInfo",null);return a=d([b.subclass("esri.layers.mixins.TemporalLayer")],a)}(b.declared(f))});

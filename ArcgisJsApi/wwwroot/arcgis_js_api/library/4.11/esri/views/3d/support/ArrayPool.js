@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.11/esri/copyright.txt for details.
+//>>built
+define(["require","exports","../../../core/PooledArray"],function(d,e,g){Object.defineProperty(e,"__esModule",{value:!0});d=function(){function c(b){this.arrayConstructor=b;this._pool=new Map}c.prototype.get=function(b){var a=this._pool.get(b);if(!a||0===a.length)try{return new this.arrayConstructor(b)}catch(f){var a=window.performance&&window.performance.memory,c="";a&&(c="\n  totalJSHeapSize: "+a.totalJSHeapSize+", usedJSHeapSize: "+a.usedJSHeapSize+", jsHeapSizeLimit: "+a.jsHeapSizeLimit);console.log("Array allocation of size "+
+b+" failed: "+f+c);throw f;}return a.pop()};c.prototype.put=function(b){var a=this._pool.get(b.length);a||(a=new g({shrink:!0}),this._pool.set(b.length,a));a.push(b)};c.prototype.clear=function(){this._pool.clear()};return c}();e.ArrayPool=d});

@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.11/esri/copyright.txt for details.
+//>>built
+define(["require","exports","dojo/errors/CancelError","../../core/promiseUtils"],function(e,f,h,g){Object.defineProperty(f,"__esModule",{value:!0});e=function(){function a(){this._deferreds=[];this._values=[]}a.prototype.push=function(a){var b=this;return g.create(function(c,d){b._deferreds.push({resolve:c,reject:d});b._values.push(a)})};a.prototype.unshift=function(a){var b=this;return g.create(function(c,d){b._deferreds.unshift({resolve:c,reject:d});b._values.unshift(a)})};Object.defineProperty(a.prototype,
+"length",{get:function(){return this._deferreds.length},enumerable:!0,configurable:!0});a.prototype.process=function(){if(0===this.length)return!1;this._deferreds.shift().resolve(this._values.shift());return!0};a.prototype.cancelAll=function(){for(var a=new h,b=0,c=this._deferreds;b<c.length;b++)c[b].reject(a);this._deferreds.length=0;this._values.length=0};return a}();f.PromiseQueue=e});

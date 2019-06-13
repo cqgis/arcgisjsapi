@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.11/esri/copyright.txt for details.
+//>>built
+define("require exports ../../core/tsSupport/declareExtendsHelper ../../core/tsSupport/decorateHelper ../../core/Collection ../../core/JSONSupport ../../core/uuid ../../core/accessorSupport/decorators ./BuildingFilterBlock".split(" "),function(m,n,e,c,f,g,h,b,k){var l=f.ofType(k);return function(d){function a(){var a=null!==d&&d.apply(this,arguments)||this;a.description=null;a.id=h.generateUUID();a.visible=!0;a.name=null;return a}e(a,d);c([b.property({type:String})],a.prototype,"description",void 0);
+c([b.property({type:l})],a.prototype,"filterBlocks",void 0);c([b.property({type:String})],a.prototype,"id",void 0);c([b.property({json:{read:{source:"isVisible"}},type:Boolean})],a.prototype,"visible",void 0);c([b.property({type:String})],a.prototype,"name",void 0);return a=c([b.subclass("esri.layers.buildingSublayers.BuildingFilter")],a)}(b.declared(g))});

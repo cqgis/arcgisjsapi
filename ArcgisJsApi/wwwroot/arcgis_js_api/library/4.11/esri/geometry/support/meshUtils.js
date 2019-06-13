@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.11/esri/copyright.txt for details.
+//>>built
+define("require exports ../../core/tsSupport/generatorHelper ../../core/tsSupport/awaiterHelper ../../core/promiseUtils ../Mesh ./meshUtils/georeference ./meshUtils/merge".split(" "),function(e,a,f,g,h,k,c,l){Object.defineProperty(a,"__esModule",{value:!0});a.createFromElevation=function(m,a,d){return g(this,void 0,void 0,function(){var b;return f(this,function(c){switch(c.label){case 0:return[4,h.create(function(a){return e(["./meshUtils/elevation"],a)})];case 1:return b=c.sent(),[2,b.create(m,a,
+d)]}})})};a.georeference=function(a,b,d){return c.georeference(a,b,d)};a.ungeoreference=function(a,b,d){return c.ungeoreference(a,b,d)};a.merge=function(a){return new k(l.merge(a))}});

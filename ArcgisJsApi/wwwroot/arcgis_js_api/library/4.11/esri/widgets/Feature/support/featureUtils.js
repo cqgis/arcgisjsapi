@@ -1,0 +1,4 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.11/esri/copyright.txt for details.
+//>>built
+define(["require","exports"],function(d,b){Object.defineProperty(b,"__esModule",{value:!0});var c={1:{rotate:0,scaleX:1},2:{rotate:0,scaleX:-1},3:{rotate:180,scaleX:1},4:{rotate:180,scaleX:-1},5:{rotate:90,scaleX:-1},6:{rotate:90,scaleX:1},7:{rotate:-90,scaleX:-1},8:{rotate:-90,scaleX:1}};b.getSourceLayer=function(a){if(a)return a.get("sourceLayer")||a.get("layer")};b.getOrientationStyles=function(a){return(a=c[a])?{transform:"rotate("+a.rotate+"deg) scaleX("+a.scaleX+")"}:{}}});

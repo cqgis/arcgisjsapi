@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.11/esri/copyright.txt for details.
+//>>built
+define(["require","exports","../../../../../core/tsSupport/extendsHelper","./WGLBrush","../../../../webgl/VertexArrayObject"],function(e,g,h,k,l){Object.defineProperty(g,"__esModule",{value:!0});e=function(f){function a(){return null!==f&&f.apply(this,arguments)||this}h(a,f);a.prototype.draw=function(c,b){var a=this;if(b.canDisplay){var d=this.getGeometryType(),f=b.getDisplayList(c.drawPhase),e=b.getGeometry(d);e&&f.byType(d,function(d){a.drawGeometry(c,b,d,e)})}};a.prototype._getVAO=function(c,b,
+a,d){d.vao||(d.vao=new l(c,a,b,d.vertexBufferMap,d.indexBuffer));return d.vao};a.prototype._setSharedUniforms=function(c,b,a){c.setUniform1f("u_pixelRatio",b.pixelRatio);c.setUniformMatrix3fv("u_dvsMat3",a.dvsMat3);c.setUniformMatrix3fv("u_displayViewMat3",b.state.displayViewMat3);c.setUniformMatrix4fv("u_insideEffectMat4",b.rendererInfo.insideEffect);c.setUniformMatrix4fv("u_outsideEffectMat4",b.rendererInfo.outsideEffect)};return a}(k.default);g.default=e});

@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.11/esri/copyright.txt for details.
+//>>built
+define("require exports ../../core/tsSupport/declareExtendsHelper ../../core/tsSupport/decorateHelper ../../core/Accessor ../../core/HandleOwner ../../core/accessorSupport/decorators".split(" "),function(k,l,f,d,g,h,c){return function(e){function a(b){b=e.call(this,b)||this;b._baselineJSON=null;return b}f(a,e);Object.defineProperty(a.prototype,"modified",{get:function(){var b=this._baselineJSON,a=this.feature;return!(!b||!a)&&b!==JSON.stringify(a)},enumerable:!0,configurable:!0});a.prototype.trackChanges=
+function(){this.feature&&(this._baselineJSON=JSON.stringify(this.feature))};a.prototype.updateAttributes=function(a){this.feature.attributes=a;this.notifyChange("modified")};a.prototype.updateGeometry=function(a){this.feature.geometry=a;this.notifyChange("modified")};d([c.property()],a.prototype,"feature",void 0);d([c.property()],a.prototype,"modified",null);return a=d([c.subclass("esri.widgets.Editor.Edits")],a)}(c.declared(g,h))});

@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.11/esri/copyright.txt for details.
+//>>built
+define({authoritative:"Autoritativ",collaboration:"\u00e5_Collaboration______________\u00f8",deleted:"Slettet",deprecated:"Foreldet",livingAtlas:"Living Atlas",marketplace:"Marketplace",openData:"Open Data",premium:"Premium",subscriber:"Abonnent",tooltips:{altAuthoritative:"Autorativt: Anbefalt av",authoritative:"Autoritativt: Anbefalt av organisasjonen din",collaboration:"\u00e5_This item was received from a collaboration_______________________\u00f8",deprecated:"Foreldet: Anbefales ikke for bruk",
+livingAtlas:"Levende atlas: Innhold behandlet av Esri",marketplace:"Oppf\u00f8rt p\u00e5 ArcGIS Marketplace",openData:"Tilgjengelig for offentlig bruk",premiumAnon:"Premium: Krever p\u00e5logging med et ArcGIS Online-abonnement og bruker credits",subscriberAnon:"Abonnent: Krever p\u00e5logging med et ArcGIS Online-abonnement",premiumPublic:"Premium: Krever ArcGIS Online-abonnement og bruker credits",subscriberPublic:"Abonnent: Krever ArcGIS Online-abonnement",premiumOrg:"Premium: Eksklusivt innhold for abonnenter. Bruker credits.",
+subscriberOrg:"Abonnent: Eksklusivt innhold for abonnenter"}});

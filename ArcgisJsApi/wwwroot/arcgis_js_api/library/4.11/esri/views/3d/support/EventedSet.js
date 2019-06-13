@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.11/esri/copyright.txt for details.
+//>>built
+define("require exports ../../../core/tsSupport/extendsHelper @dojo/framework/shim/array @dojo/framework/shim/Set ./Evented".split(" "),function(e,f,g,h,k,l){Object.defineProperty(f,"__esModule",{value:!0});e=function(c){function a(){var b=null!==c&&c.apply(this,arguments)||this;b._set=new k.default;return b}g(a,c);a.prototype.clear=function(){if(0<this._set.size){var b=this.toArray();this._set.clear();this.emit("change",{added:[],removed:b})}};Object.defineProperty(a.prototype,"length",{get:function(){return this._set.size},
+enumerable:!0,configurable:!0});a.prototype.addMany=function(b){if(0!==b.length){for(var d=0;d<b.length;d++)this._set.add(b[d]);this.emit("change",{added:b,removed:[]})}};a.prototype.removeMany=function(b){for(var d=[],a=0;a<b.length;a++){var c=b[a];this._set.delete(c)&&d.push(c)}0<d.length&&this.emit("change",{added:[],removed:d})};a.prototype.toArray=function(){return h.from(this._set)};a.prototype.find=function(b){for(var a=this._set.entries(),c=a.next();!c.done;c=a.next())if(b(c.value[0]))return c.value[0]};
+a.prototype.forEach=function(a){this._set.forEach(function(b){return a(b)})};return a}(l.Evented);f.EventedSet=e});

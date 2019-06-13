@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.11/esri/copyright.txt for details.
+//>>built
+define("require exports ../../../../core/tsSupport/extendsHelper ../../../../core/tsSupport/decorateHelper ../../../../geometry ../../../../core/maybe ../../../../core/unitUtils ../../../../renderers/support/clickToleranceUtils".split(" "),function(p,g,q,r,l,m,h,n){function k(a,e,b){var c=b.get("basemapTerrain"),d=b.get("basemapTerrain.overlayManager"),d=d?d.overlayPixelSizeInMapUnits(a):1,f=c&&!c.spatialReference.equals(b.spatialReference)?h.getMetersPerUnitForSR(c.spatialReference)/h.getMetersPerUnitForSR(b.spatialReference):
+e*d;e=a.x-f;c=a.y-f;d=a.x+f;a=a.y+f;return new l.Extent({xmin:Math.min(e,d),ymin:Math.min(c,a),xmax:Math.max(e,d),ymax:Math.max(c,a),spatialReference:b.spatialReference})}Object.defineProperty(g,"__esModule",{value:!0});g.createQueryGeometry=k;g.intersectsDrapedGeometry=function(a,e,b){a=b.toMap(a);if(m.isNone(a))return null;var c=n.calculateTolerance();return k(a,c,b).intersects(e)?a:null}});

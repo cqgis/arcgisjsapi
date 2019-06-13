@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.11/esri/copyright.txt for details.
+//>>built
+define(["require","exports","../../core/Collection","../../core/maybe"],function(l,e,k,f){function g(c,b){var a=c.view;b&&a.ready&&a.activeTool!==c?(a.activeTool=c,a&&a.focus&&a.focus()):b||a.activeTool!==c||(a.activeTool=null)}function h(c,b){return{addManipulator:function(a){return c.addToolManipulator(b,a)},removeManipulator:function(a){return c.removeToolManipulator(b,a)},removeManipulators:function(){return c.removeToolManipulators(b)},attemptManipulatorDragTo:function(a,d){return c.attemptManipulatorDragTo(b,
+a,{screenPoint:d})}}}Object.defineProperty(e,"__esModule",{value:!0});e.setActive=g;e.swap=function(c,b,a){var d=c.activeTool;b!==d&&(f.isSome(d)&&d.deactivate&&d.deactivate(),a(b),f.isSome(b)&&b.activate&&b.activate(),c.tools.forEach(function(a){var c=f.isNone(b)||b===a;"enableEditing"in a&&"disableEditing"in a?c?a.enableEditing():a.disableEditing():"editable"in a&&(a.editable=c)}))};e.newToolCollection=function(c){var b=new k;b.on("after-add",function(a){a=a.item;a.view&&a.view.ready&&a.attach&&
+a.attach(h(c,a))});b.on("after-remove",function(a){a=a.item;g(a,!1);a.detach&&a.detach();c.removeToolManipulators(a)});return b};e.wrapToolViewManager=h});

@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.11/esri/copyright.txt for details.
+//>>built
+define(["require","exports","./utils"],function(u,a,q){function l(b,c,d,e,f){if(!b)return!1;c=q.getStride(c,d);d=b.coords;var h=!1,k=0,p=0;for(b=b.lengths;p<b.length;p++){for(var a=b[p],g=k,m=k,l=k+a*c;m<l;m+=c){g=m+c;g===l&&(g=k);var r=d[m],n=d[m+1],t=d[g],g=d[g+1];(n<f&&g>=f||g<f&&n>=f)&&r+(f-n)/(g-n)*(t-r)<e&&(h=!h)}k+=a*c}return h}Object.defineProperty(a,"__esModule",{value:!0});a.polygonContainsPoint=function(b,c,d,e){return l(b,c,d,e.coords[0],e.coords[1])};a.polygonContainsMultipoint=function(b,
+c,d,e,f,h){f=q.getStride(f,h);h=e.coords;e=e.lengths;if(!e)return!1;for(var k=0,a=0;k<e.length;k++,a+=f)if(!l(b,c,d,h[a],h[a+1]))return!1;return!0};a.polygonContainsCoords=l});

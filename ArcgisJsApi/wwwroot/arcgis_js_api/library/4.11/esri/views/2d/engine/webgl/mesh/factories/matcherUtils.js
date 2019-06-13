@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.11/esri/copyright.txt for details.
+//>>built
+define(["require","exports","../../../../../../core/Error","../../../../../../core/Logger","../../util/Matcher"],function(k,e,f,g,b){Object.defineProperty(e,"__esModule",{value:!0});var h=g.getLogger("esri/views/2d/engine/webgl/mesh/factories/matcherUtils");e.createMatcher=function(a,c,d){switch(a.type){case "simple":case "dot-density":case "dotDensity":return b.default.fromBasicRenderer(a,c,d);case "unique-value":case "uniqueValue":return b.MapMatcher.fromUVRenderer(a,c,d);case "class-breaks":case "classBreaks":return b.IntervalMatcher.fromCBRenderer(a,
+c,d);default:return h.error(new f("mapview-mesh:invalid-renderer","Unable to handle unknown renderer type")),null}}});

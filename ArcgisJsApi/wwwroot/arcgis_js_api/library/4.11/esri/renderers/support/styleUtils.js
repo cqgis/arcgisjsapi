@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.11/esri/copyright.txt for details.
+//>>built
+define("require exports ../../core/tsSupport/generatorHelper ../../core/tsSupport/awaiterHelper ../../core/asyncUtils ../../core/Warning".split(" "),function(n,g,h,k,l,m){Object.defineProperty(g,"__esModule",{value:!0});g.loadStyleRenderer=function(b,a){return k(this,void 0,void 0,function(){var c,d,e;return h(this,function(f){switch(f.label){case 0:return(c=b&&b.getAtOrigin&&b.getAtOrigin("renderer",a.origin))&&"unique-value"===c.type&&c.styleOrigin?[4,l.result(c.populateFromStyle())]:[3,2];case 1:d=
+f.sent(),!1===d.ok&&(e=d.error,a&&a.messages&&a.messages.push(new m("renderer:style-reference","Failed to create unique value renderer from style reference: "+e.message,{error:e,context:a})),b.clear("renderer",a.origin)),f.label=2;case 2:return[2]}})})}});

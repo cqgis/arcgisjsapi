@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.11/esri/copyright.txt for details.
+//>>built
+define("require exports ../core/tsSupport/declareExtendsHelper ../core/tsSupport/decorateHelper ../core/accessorSupport/decorators ../portal/Portal ./Symbol".split(" "),function(k,l,f,c,b,g,h){return function(e){function a(a){a=e.call(this,a)||this;a.data=null;a.portal=null;a.styleName="";a.styleUrl="";a.type="cim";return a}f(a,e);d=a;a.prototype.readData=function(a,b){return b.data?b.data:b};a.prototype.clone=function(){return new d({color:this.color,data:this.data,portal:this.portal,styleName:this.styleName,
+styleUrl:this.styleUrl})};var d;c([b.property({json:{write:!1}})],a.prototype,"color",void 0);c([b.property({json:{write:!0}})],a.prototype,"data",void 0);c([b.reader("data",["data","symbol"])],a.prototype,"readData",null);c([b.property({type:g,json:{write:!1}})],a.prototype,"portal",void 0);c([b.property({type:String,json:{write:!0}})],a.prototype,"styleName",void 0);c([b.property({type:String,json:{write:!0}})],a.prototype,"styleUrl",void 0);c([b.property({type:String,readOnly:!0})],a.prototype,
+"type",void 0);return a=d=c([b.subclass("esri.symbols.CIMSymbol")],a)}(b.declared(h))});
