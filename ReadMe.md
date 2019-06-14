@@ -8,9 +8,11 @@
 
 ### Docker 镜像使用方法
 
+Docker镜像地址：`https://cloud.docker.com/u/cqgis/repository/docker/cqgis/arcgisjsapi`
+
 需要设置 host 环境变量，在值中，使用 http
 
-`docker run -d -p 8080:80 -e host=http://***：8080 cqgis/arcgisjsapi:4.11`
+`docker run -d -p 8080:80 -e host=http://***:8080 cqgis/arcgisjsapi:4.11`
 
 ### 使用方法
 
