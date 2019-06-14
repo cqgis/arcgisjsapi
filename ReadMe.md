@@ -1,15 +1,78 @@
-## ËµÃ÷
+## è¯´æ˜
 
-±¾ÏîÄ¿ÔÚDockerÖĞ²¿Êğarcgis api for javascript 
+æœ¬é¡¹ç›®åœ¨ Docker ä¸­éƒ¨ç½² arcgis api for javascript
 
-²Î¿¼µØÖ·£ºhttps://developers.arcgis.com/javascript/latest/guide/get-api/ 
+å‚è€ƒåœ°å€ï¼šhttps://developers.arcgis.com/javascript/latest/guide/get-api/
 
+æœ¬é¡¹ç›®ä½¿ç”¨ asp.net core 2.2ï¼Œå¯åŠ¨æ—¶æ£€æŸ¥ api åœ°å€æ˜¯å¦æ­£å¸¸
 
-±¾ÏîÄ¿Ê¹ÓÃ asp.net core 2.2£¬Æô¶¯Ê±¼ì²éapiµØÖ·ÊÇ·ñÕı³£
+### Docker é•œåƒä½¿ç”¨æ–¹æ³•
 
+éœ€è¦è®¾ç½® host ç¯å¢ƒå˜é‡ï¼Œåœ¨å€¼ä¸­ï¼Œä½¿ç”¨ http
 
-#### Docker¾µÏñÊ¹ÓÃ·½·¨
+`docker run -d -p 8080:80 -e host=http://***ï¼š8080 cqgis/arcgisjsapi:4.11`
 
-ĞèÒªÉèÖÃ host »·¾³±äÁ¿£¬ÔÚÖµÖĞ£¬Ê¹ÓÃhttp
+### ä½¿ç”¨æ–¹æ³•
 
-`docker run -d -p 8080:80 -e host=http://***£º8080  cqgis/arcgisjsapi:4.11`
+```
+<link rel="stylesheet" href="http://***/arcgis_js_api/library/4.11/dijit/themes/claro/claro.css" />
+<link rel="stylesheet" href="http://***/arcgis_js_api/library/4.11/esri/themes/light/main.css" />
+<script src="http://***/arcgis_js_api/library/4.11/dojo/dojo.js"></script>
+```
+
+### æµ‹è¯•æ–¹æ³•
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no" />
+    <title>æµ‹è¯•åœ°å€</title>
+    <link rel="stylesheet" href="https://www.example.com/arcgis_js_api/library/4.11/dijit/themes/claro/claro.css" />
+    <link rel="stylesheet" href="https://www.example.com/arcgis_js_api/library/4.11/esri/themes/light/main.css" />
+    <style>
+      html,
+      body,
+      #viewDiv {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+    <script src="https://www.example.com/arcgis_js_api/library/4.11/dojo/dojo.js"></script>
+    <script>
+      var myMap, view;
+      require([
+        "esri/Basemap",
+        "esri/layers/TileLayer",
+        "esri/Map",
+        "esri/views/MapView"
+      ], function (Basemap, TileLayer, Map, MapView){
+        var layer = new TileLayer({
+          url: "https://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer"
+        });
+        var customBasemap = new Basemap({
+          baseLayers: [layer],
+          title: "Custom Basemap",
+          id: "myBasemap"
+        });
+        myMap = new Map({
+          basemap: customBasemap
+        });
+        view = new MapView({
+          center: [108.87, 29], // long, lat
+          container: "viewDiv",
+          map: myMap,
+          zoom: 6
+        });
+      });
+    </script>
+  </head>
+  <body class="claro">
+    <div id="viewDiv"></div>
+  </body>
+</html>
+
+```
