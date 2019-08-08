@@ -16,7 +16,16 @@ Docker镜像地址：https://cloud.docker.com/u/cqgis/repository/docker/cqgis/ar
 
 需要设置 host 环境变量，在值中，使用 http
 
-`docker run -d -p 8080:80 -e host=http://***:8080 cqgis/arcgisjsapi:4.11`
+`docker run -d -p 8080:80 -e host=http://***:8080 cqgis/arcgisjsapi:4.12`
+
+### 多版本支持
+
+从4.12开始支持历史版本的访问(从4.11开始支持)
+如：
++ `http://***/arcgis_js_api/library/4.12/dojo/dojo.js`
++ `http://***/arcgis_js_api/library/4.11/dojo/dojo.js`
+
+
 
 ### 使用方法
 

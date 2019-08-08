@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.12/esri/copyright.txt for details.
+//>>built
+define("require exports ../../core/tsSupport/declareExtendsHelper ../../core/tsSupport/decorateHelper ../../core/tsSupport/generatorHelper ../../core/tsSupport/awaiterHelper ../../core/Accessor ../../core/promiseUtils ../../core/accessorSupport/decorators".split(" "),function(m,n,f,c,g,h,k,l,d){return function(e){function b(){var a=null!==e&&e.apply(this,arguments)||this;a.refreshTimestamp=null;a.refreshDebounced=l.debounce(function(b,d){return h(a,void 0,void 0,function(){var a;return g(this,function(c){switch(c.label){case 0:return"number"===
+typeof b?a=b:(a=Date.now(),d=b),this._set("refreshTimestamp",a),this.doRefresh?[4,this.doRefresh(d)]:[3,2];case 1:c.sent(),c.label=2;case 2:return[2]}})})},2E3);return a}f(b,e);b.prototype.refresh=function(a){void 0===a&&(a=Date.now());this._set("refreshTimestamp",a);this.doRefresh&&this.doRefresh()};c([d.property()],b.prototype,"layer",void 0);c([d.aliasOf("layer.refreshInterval")],b.prototype,"refreshInterval",void 0);c([d.property({readOnly:!0})],b.prototype,"refreshTimestamp",void 0);return b=
+c([d.subclass("esri.layers.mixins.RefreshableLayerView")],b)}(d.declared(k))});

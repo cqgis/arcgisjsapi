@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.12/esri/copyright.txt for details.
+//>>built
+define("require exports ../../core/tsSupport/generatorHelper ../../core/tsSupport/awaiterHelper ../../core/promiseUtils ../../core/requireUtils ../../core/workers ./PixelBlock module".split(" "),function(b,m,d,e,f,g,h,k,l){return function(){function a(){this._workerThread=null;this._destroyed=!1}a.prototype.initialize=function(){return e(this,void 0,void 0,function(){var c;return d(this,function(a){switch(a.label){case 0:return[4,h.open(g.getAbsMid("./RasterWorker",b,l))];case 1:return c=a.sent(),
+this._destroyed?c.close():this._workerThread=c,[2]}})})};a.prototype.destroy=function(){this._destroyed=!0;this._workerThread&&(this._workerThread.close(),this._workerThread=null)};a.prototype.decode=function(a,b){return this._workerThread?this._workerThread.invoke("decode",a,b).then(function(a){return a?new k(a):null}):f.reject(Error("no connection"))};return a}()});

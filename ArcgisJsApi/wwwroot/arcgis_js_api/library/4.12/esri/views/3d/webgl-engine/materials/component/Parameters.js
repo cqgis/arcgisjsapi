@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.12/esri/copyright.txt for details.
+//>>built
+define(["require","exports","../../../../../core/tsSupport/assignHelper","../../lib/TextureBackedBuffer/TextureBackedBuffer"],function(f,a,b,c){Object.defineProperty(a,"__esModule",{value:!0});a.isUniformComponentData=function(a){return!(a instanceof c.TextureBackedBuffer)};a.fillDefaults=function(a){return b({baseColor:d,baseColorOpacity:1,baseColorTexture:null,doubleSidedShading:!1,normals:"screen-space",cullFace:"back",componentData:e,receiveSSAO:!0,forceTransparency:null,slicePlaneEnabled:!1,
+polygonOffsetEnabled:!1,writeStencil:!1,readStencil:!1,layerOpacity:1},a)};var d=[1,1,1],e={externalColor:[1,1,1,1],externalColorMixMode:"multiply",castShadows:!0}});

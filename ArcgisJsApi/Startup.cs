@@ -61,10 +61,21 @@ throw new Exception("请设置host环境变量，部署后直接访问地址，�
 
 
         #region  
-
+         
         private static void BuildJsApi(string host)
         {
-            var apiDirectory = "arcgis_js_api/library/4.11/";
+            //2019-08-08 加入对多版本的支持
+            var dirpath = Path.GetFullPath(Path.Combine("wwwroot/arcgis_js_api/library/"));
+            var folder = new DirectoryInfo(dirpath).GetDirectories("*.*", SearchOption.TopDirectoryOnly);
+            foreach (var directoryInfo in folder)
+            {
+                BuildJsVersion(host, directoryInfo.Name);
+            }
+        }
+
+        private static void BuildJsVersion(string host, string version)
+        {
+            var apiDirectory = $"arcgis_js_api/library/{version}/";
             var dirpath = Path.GetFullPath(Path.Combine("wwwroot", apiDirectory));
 
 

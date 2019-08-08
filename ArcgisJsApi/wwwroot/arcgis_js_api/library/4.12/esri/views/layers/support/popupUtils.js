@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.12/esri/copyright.txt for details.
+//>>built
+define("require exports ../../../core/tsSupport/generatorHelper ../../../core/tsSupport/awaiterHelper @dojo/framework/shim/array ../../../core/maybe ../../../layers/support/fieldUtils".split(" "),function(x,c,u,v,w,g,h){Object.defineProperty(c,"__esModule",{value:!0});c.getRequiredFields=function(a,b){void 0===b&&(b=a.popupTemplate);return v(this,void 0,void 0,function(){var c,l,d,m,e,n,p,q,r,t,k;return u(this,function(f){switch(f.label){case 0:return g.isSome(b)?[4,b.getRequiredFields(a.fields)]:
+[2,[]];case 1:c=f.sent();l=b.lastEditInfoEnabled;d=a.objectIdField;m=a.typeIdField;if(w.includes(c,"*"))return[2,["*"]];n=h.fixFields;p=[a.fields];r=(q=c).concat;t=[[m]];return(k=l)?[4,h.getFeatureEditFields(a)]:[3,3];case 2:k=f.sent(),f.label=3;case 3:return(e=n.apply(void 0,p.concat([r.apply(q,t.concat([k||null]))])))&&d&&h.hasField(a.fields,d)&&-1===e.indexOf(d)&&e.push(d),[2,e]}})})};c.getFetchPopupTemplate=function(a,b){return a.popupTemplate?a.popupTemplate:g.isSome(b)&&b.defaultPopupTemplateEnabled&&
+g.isSome(a.defaultPopupTemplate)?a.defaultPopupTemplate:null}});

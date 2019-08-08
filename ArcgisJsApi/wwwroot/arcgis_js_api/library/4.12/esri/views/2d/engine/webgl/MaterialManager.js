@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.12/esri/copyright.txt for details.
+//>>built
+define("require exports ../../../../core/tsSupport/assignHelper @dojo/framework/shim/Map ../../../webgl ./enums ./shaders/MaterialPrograms".split(" "),function(m,n,h,g,k,a,l){return function(){function b(a){this._programByKey=new g.default;this._programCache=new k.ProgramCache(a)}b.prototype.dispose=function(){this._programCache&&this._programCache.dispose()};b.prototype.getProgram=function(e,c,b,d,g){var f;f=e.getVariationHash()+"-"+((c===a.WGLDrawPhase.HITTEST||c===a.WGLDrawPhase.LABEL_ALPHA?1:
+0)|(c===a.WGLDrawPhase.HIGHLIGHT?2:0))+"-"+b.getVariationHash();if(this._programByKey.has(f))return this._programByKey.get(f);e=h({},e.getVariation(),b.getVariation(),{highlight:c===a.WGLDrawPhase.HIGHLIGHT,id:c===a.WGLDrawPhase.HITTEST||c===a.WGLDrawPhase.LABEL_ALPHA});d=this._programCache.getProgram(l.createProgramTemplate(d,g),e);if(!d)throw Error("Unable to get program for key: ${key}");this._programByKey.set(f,d);return d};return b}()});

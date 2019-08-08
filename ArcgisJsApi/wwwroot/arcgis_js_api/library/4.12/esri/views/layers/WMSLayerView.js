@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.12/esri/copyright.txt for details.
+//>>built
+define("require exports ../../core/tsSupport/declareExtendsHelper ../../core/tsSupport/decorateHelper ../../core/tsSupport/generatorHelper ../../core/tsSupport/awaiterHelper ../../core/Error ../../core/promiseUtils ../../core/accessorSupport/decorators ./RefreshableLayerView".split(" "),function(v,w,p,d,r,t,l,m,b,u){return function(e){function a(a){return e.call(this,a)||this}p(a,e);a.prototype.fetchPopupFeatures=function(a){return t(this,void 0,void 0,function(){var f,b,c,g,h,k,d,e,q,n;return r(this,
+function(p){f=this.layer;if(!a)return[2,m.reject(new l("wmslayerview:fetchPopupFeatures","Nothing to fetch without area",{layer:f}))];b=f.popupEnabled;if(!b)return[2,m.reject(new l("wmslayerview:fetchPopupFeatures","popupEnabled should be true",{popupEnabled:b}))];c=this.createFetchPopupFeaturesQuery(a);g=c.extent;h=c.width;k=c.height;d=c.x;e=c.y;q=g&&h&&k;if(!q)throw new l("wmslayerview:fetchPopupFeatures","WMSLayer does not support fetching features.",{extent:g,width:h,height:k});n=f.fetchFeatureInfo(g,
+h,k,d,e);return[2,n?n.then(function(a){return[a]}):m.resolve([])]})})};d([b.property()],a.prototype,"layer",void 0);return a=d([b.subclass("esri.views.layers.WMSLayerView")],a)}(b.declared(u))});

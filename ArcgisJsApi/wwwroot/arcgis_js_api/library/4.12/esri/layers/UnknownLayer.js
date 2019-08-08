@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.12/esri/copyright.txt for details.
+//>>built
+define("require exports ../core/tsSupport/declareExtendsHelper ../core/tsSupport/decorateHelper ../core/Error ../core/MultiOriginJSONSupport ../core/promiseUtils ../core/scheduling ../core/accessorSupport/decorators ./Layer ./mixins/PortalLayer".split(" "),function(p,q,f,b,g,h,k,l,c,m,n){return function(e){function a(d){d=e.call(this)||this;d.resourceInfo=null;d.type="unknown";return d}f(a,e);a.prototype.initialize=function(){var d=this;this.addResolvingPromise(k.create(function(a,c){l.schedule(function(){var a=
+d.resourceInfo&&(d.resourceInfo.layerType||d.resourceInfo.type),b="Unknown layer type";a&&(b+=" "+a);c(new g("layer:unknown-layer-type",b,{layerType:a}))})}))};a.prototype.read=function(a,b){this.inherited(arguments,[{resourceInfo:a},b])};a.prototype.write=function(a,b){return null};b([c.shared("esri.layers.UnknownLayer")],a.prototype,"declaredClass",void 0);b([c.property({readOnly:!0})],a.prototype,"resourceInfo",void 0);b([c.property({type:["show","hide"]})],a.prototype,"listMode",void 0);b([c.property({json:{read:!1},
+readOnly:!0,value:"unknown"})],a.prototype,"type",void 0);return a=b([c.subclass("esri.layers.UnknownLayer")],a)}(c.declared(m,h,n))});

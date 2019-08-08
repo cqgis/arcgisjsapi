@@ -1,0 +1,4 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.12/esri/copyright.txt for details.
+//>>built
+define({clearSelection:"\u041e\u0447\u0438\u0441\u0442\u0438\u0442\u0438 \u0432\u0438\u0431\u0456\u0440",searchGroups:"\u0428\u0443\u043a\u0430\u0442\u0438 \u0433\u0440\u0443\u043f\u0438",selectAll:"\u0412\u0438\u0431\u0440\u0430\u0442\u0438 \u0432\u0441\u0456",selected:"\u0432\u0438\u0431\u0440\u0430\u043d\u0456",pageRange:{en:"${start} - ${end} \u0437 ${total}",other:"${start} - ${end}, \u0437\u0430\u0433\u0430\u043b\u043e\u043c: ${total}"}});
