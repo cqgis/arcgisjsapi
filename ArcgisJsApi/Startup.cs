@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -41,15 +42,23 @@ namespace ArcgisJsApi
 #else
 if(string.IsNullOrWhiteSpace(host))
 throw new Exception("请设置host环境变量，部署后直接访问地址，如：http://127.0.0.1或https://127.0.0.1");
+              BuildJsApi(host);
 
 #endif
 
 
+            var provider = new FileExtensionContentTypeProvider();
+            // Add new mappings
+            provider.Mappings[".wsv"] = "binary/octet-stream";
 
-            BuildJsApi(host);
 
             app.UseCors("all");
-            app.UseStaticFiles();
+            app.UseStaticFiles(new StaticFileOptions()
+            {
+                ServeUnknownFileTypes = true,
+                DefaultContentType = "image/png",
+                ContentTypeProvider = provider
+            });
 
             app.UseMvc(routes =>
             {
@@ -61,7 +70,7 @@ throw new Exception("请设置host环境变量，部署后直接访问地址，�
 
 
         #region  
-         
+
         private static void BuildJsApi(string host)
         {
             //2019-08-08 加入对多版本的支持
