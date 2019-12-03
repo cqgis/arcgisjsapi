@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.13/esri/copyright.txt for details.
+//>>built
+define("require exports ../../../../core/tsSupport/extendsHelper ../../../../core/has ../../../../core/libs/gl-matrix-2/mat3 ../../../../core/libs/gl-matrix-2/mat3f32 ../DisplayObject ../../tiling/TileKey".split(" "),function(d,e,k,n,f,g,l,h){Object.defineProperty(e,"__esModule",{value:!0});d=function(d){function a(b,a,m){var c=d.call(this)||this;c.transforms={dvs:g.mat3f32.create(),tileMat3:g.mat3f32.create()};c.key=h.pool.acquire(b);c.bounds=a;c.size=m;return c}k(a,d);a.prototype.destroy=function(){h.pool.release(this.key);
+this.texture&&this.texture.dispose()};Object.defineProperty(a.prototype,"coords",{get:function(){return this._coords},enumerable:!0,configurable:!0});Object.defineProperty(a.prototype,"bounds",{get:function(){return this._bounds},set:function(b){this._coords=[b[0],b[3]];this._bounds=b},enumerable:!0,configurable:!0});a.prototype.setTransform=function(b,a){a/=b.resolution*b.pixelRatio;var d=this.transforms.tileMat3,c=b.toScreenNoRotation([0,0],this.coords);f.mat3.set(this.transforms.tileMat3,a,0,0,
+0,a,0,c[0],c[1],1);f.mat3.multiply(this.transforms.dvs,b.displayViewMat3,d)};return a}(l.DisplayObject);e.TiledDisplayObject=d});

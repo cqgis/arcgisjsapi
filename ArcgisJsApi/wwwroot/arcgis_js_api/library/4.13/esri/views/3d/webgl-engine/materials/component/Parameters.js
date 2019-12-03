@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.13/esri/copyright.txt for details.
+//>>built
+define(["require","exports","../../../../../core/tsSupport/assignHelper"],function(e,a,b){Object.defineProperty(a,"__esModule",{value:!0});a.isUniformComponentData=function(a){return!("textureBuffer"in a)};a.fillDefaults=function(a){return b({baseColor:c,baseColorOpacity:1,baseColorTexture:null,doubleSidedShading:!1,normals:"screen-space",cullFace:"back",componentData:d,useVertexTransparencyDiscards:!1,receiveSSAO:!0,forceTransparency:null,slicePlaneEnabled:!1,polygonOffsetEnabled:!1,writeStencil:!1,
+readStencil:!1,layerOpacity:1,usePBR:!1,normalTexture:null,emissiveTexture:null,occlusionTexture:null,metallicRoughnessTexture:null,emissiveFactor:[0,0,0],metallicFactor:0,roughnessFactor:1,reflectanceFactor:.5},a)};var c=[1,1,1],d={externalColor:[1,1,1,1],externalColorMixMode:"multiply",castShadows:!0}});

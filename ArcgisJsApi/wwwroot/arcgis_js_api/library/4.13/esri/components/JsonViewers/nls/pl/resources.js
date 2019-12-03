@@ -1,0 +1,4 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.13/esri/copyright.txt for details.
+//>>built
+define({cancel:"Anuluj",processInfo:"Informacje o procesie",jsonResult:"Wynik JSON"});

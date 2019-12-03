@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.13/esri/copyright.txt for details.
+//>>built
+define(["require","exports"],function(m,e){function k(a,b){void 0===b&&(b=0);a=a[b+3];return a>g?0:a>h?2:0<a?3:0}Object.defineProperty(e,"__esModule",{value:!0});e.encodeSymbolColor=function(a,b,d,c){void 0===c&&(c=0);null==a||"ignore"===b?(d[c+0]=255,d[c+1]=255,d[c+2]=255,d[c+3]=255):(d[c+0]=Math.floor(255*a[0]),d[c+1]=Math.floor(255*a[1]),d[c+2]=Math.floor(255*a[2]),a=Math.floor(a[3]*f),d[c+3]=0===a?0:"tint"===b?a:"replace"===b?a+h:a+g)};e.decodeSymbolColor=function(a,b){void 0===b&&(b=0);var d=
+0,c=a[b+3],e;switch(k(a,b)){case 0:d=(c-g)/f;e="multiply";break;case 2:d=(c-h)/f;e="replace";break;case 3:d=c/f,e="tint"}return{color:[a[b+0]/255,a[b+1]/255,a[b+2]/255,d],colorMixMode:e}};e.decodeSymbolColorMixMode=k;e.isOpaqueSymbolColor=function(a,b){void 0===b&&(b=0);a=a[b+3];return a===h||a===g||a===l};var f=85,h=f,g=2*f,l=3*f});

@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.13/esri/copyright.txt for details.
+//>>built
+define("require exports ../../../core/maybe ../../../intl/date ../../../renderers/support/utils ../../../renderers/visualVariables/SizeVariable".split(" "),function(p,e,g,m,n,l){Object.defineProperty(e,"__esModule",{value:!0});e.formatDateLabel=function(a){return m.formatDate(new Date(a),n.timelineDateFormatOptions)};e.getDeviationValues=function(a,b,c){if(!g.isSome(b)||!g.isSome(a))return[];for(var f=[],d=-1*c;d<=c;d++)0!==d&&f.push(b+d*a);return f};e.getPathForSizeStops=function(a){var b=a.min,
+c=a.pathHeight,f=a.pathWidth,d=a.topWidth*f,f=a.bottomWidth*f,e=a.max-b;return"M"+d+" 0 L"+d+" "+Math.round(c-(a.topValue-b)/e*c)+" L"+f+" "+Math.round(c-(a.bottomValue-b)/e*c)+" L"+f+" "+c+" L0 "+c+" L0 0 Z"};e.getSizesFromVariable=function(a){var b=a.maxSize;a=a.minSize;b instanceof l&&(b=b.stops[0].size);a instanceof l&&(a=a.stops[0].size);return[b,a]};e.getStopChanges=function(a,b,c,f,d){a=d.length-1;b=d[0];for(var e=d[a]-b,g=f-c,h=[],k=1;k<a;k++)h.push({index:k,value:(d[k]-b)/e*g+c});h.unshift({index:0,
+value:c});h.push({index:a,value:f});return h}});

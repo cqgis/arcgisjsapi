@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.13/esri/copyright.txt for details.
+//>>built
+define(["require","exports","../../../../core/mathUtils"],function(d,e,f){Object.defineProperty(e,"__esModule",{value:!0});d=function(){function b(a){null==a?a=16:65536>a&&(a=f.nextHighestPowerOfTwo(a));this.array=new Float32Array(a);this.size=0}b.prototype.resize=function(a,b){this.size=a;var c;if(this.size>this.array.length){for(a=this.array.length||1;a<this.size;)a*=2;c=new Float32Array(a);b&&c.set(this.array);this.array=c;return!0}c=2*this.size;if(c<=this.array.length){for(a=this.array.length;a>=
+c;)a=Math.floor(a/2);c=new Float32Array(a);b&&c.set(this.array.subarray(0,a));this.array=c;return!0}return!1};b.prototype.append=function(a){var b=this.size;this.resize(this.size+a.length,!0);this.array.set(a,b)};b.prototype.erase=function(a,b){for(;a<b;++a)this.array[a]=0};b.prototype.getArray=function(){return this.array};b.prototype.getSize=function(){return this.size};return b}();e.ResizableFloat32Array=d});

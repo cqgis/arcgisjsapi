@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.13/esri/copyright.txt for details.
+//>>built
+define("require exports ../../../../core/tsSupport/assignHelper ../../../../core/tsSupport/extendsHelper ../../../../core/tsSupport/generatorHelper ../../../../core/tsSupport/awaiterHelper ../../engine/FeatureContainer".split(" "),function(e,f,l,g,m,n,h){Object.defineProperty(f,"__esModule",{value:!0});e=function(c){function a(){return null!==c&&c.apply(this,arguments)||this}g(a,c);Object.defineProperty(a.prototype,"hasLabels",{get:function(){return!1},enumerable:!0,configurable:!0});Object.defineProperty(a.prototype,
+"labelsVisible",{get:function(){return!1},enumerable:!0,configurable:!0});a.prototype._renderGraphics=function(b,k){for(var a=0,c=this.children;a<c.length;a++){var d=c[a];d.isReady&&d.hasData&&(d.commitChanges(b),b.context.setStencilFunction(514,d.stencilRef,255),d._displayList.replay(b,d,k))}};a.prototype.renderChildren=function(b){var a=b.painter;this.children.some(function(a){return a.hasData})&&(c.prototype.renderChildren.call(this,b),this._renderGraphics(b),a=a.effects.highlight,a.bind(b),this._renderGraphics(b,
+a.defines),a.draw(b),a.unbind(b))};return a}(h.FeatureContainer);f.default=e});

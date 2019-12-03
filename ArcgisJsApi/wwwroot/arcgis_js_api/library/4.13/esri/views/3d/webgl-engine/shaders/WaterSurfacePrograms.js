@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.13/esri/copyright.txt for details.
+//>>built
+define(["require","exports","../lib/DefaultVertexAttributeLocations","./sources/resolver","../../../webgl/programUtils"],function(g,d,e,b,f){Object.defineProperty(d,"__esModule",{value:!0});var c=function(a){return f.glslifyDefineMap({SLICE:a.slice,RECEIVE_SHADOWS:a.receiveShadows})};d.color={name:"water-ocean",shaders:function(a){return{vertexShader:c(a)+b.resolveIncludes("materials/water/colorPass.vert"),fragmentShader:c(a)+b.resolveIncludes("materials/water/colorPass.frag")}},attributes:e.Default3D};
+d.drapedColor={name:"water-drapedColor",shaders:function(a){return{vertexShader:c(a)+b.resolveIncludes("materials/water/drapedColorPass.vert"),fragmentShader:c(a)+b.resolveIncludes("materials/water/drapedColorPass.frag")}},attributes:e.Default3D};d.drapedNormal={name:"water-drapedNormal",shaders:function(a){return{vertexShader:c(a)+b.resolveIncludes("materials/water/normalPass.vert"),fragmentShader:c(a)+b.resolveIncludes("materials/water/normalPass.frag")}},attributes:e.Default3D}});

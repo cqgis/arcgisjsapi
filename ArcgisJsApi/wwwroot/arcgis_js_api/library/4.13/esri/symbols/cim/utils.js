@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.13/esri/copyright.txt for details.
+//>>built
+define(["require","exports"],function(E,e){Object.defineProperty(e,"__esModule",{value:!0});e.evaluateValueOrFunction=function(a,d,c,h){return"function"===typeof a?a(d,c,h):a};e.hashString=function(a){for(var d=0,c=0;c<a.length;c++)d=(d<<5)-d+a.charCodeAt(c),d|=0;return d};e.colorToArray=function(a){return[a.r,a.g,a.b,a.a]};e.resampleHermite=function(a,d,c,h,e,t,u){void 0===u&&(u=!0);var l=d/e;c/=t;for(var A=Math.ceil(l/2),B=Math.ceil(c/2),g=0;g<t;g++)for(var k=0;k<e;k++){for(var m=4*(k+(u?t-g-1:
+g)*e),b=0,n=0,v=0,w=0,x=0,y=0,z=0,C=(g+.5)*c,p=Math.floor(g*c);p<(g+1)*c;p++)for(var q=Math.abs(C-(p+.5))/B,D=(k+.5)*l,q=q*q,r=Math.floor(k*l);r<(k+1)*l;r++){var f=Math.abs(D-(r+.5))/A,b=Math.sqrt(q+f*f);-1<=b&&1>=b&&(b=2*b*b*b-3*b*b+1,0<b&&(f=4*(r+p*d),z+=b*a[f+3],v+=b,255>a[f+3]&&(b=b*a[f+3]/250),w+=b*a[f],x+=b*a[f+1],y+=b*a[f+2],n+=b))}h[m]=w/n;h[m+1]=x/n;h[m+2]=y/n;h[m+3]=z/v}}});

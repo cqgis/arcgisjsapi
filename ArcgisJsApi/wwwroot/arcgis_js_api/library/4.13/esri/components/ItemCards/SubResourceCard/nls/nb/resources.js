@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.13/esri/copyright.txt for details.
+//>>built
+define({noCompatibleLayers:"Ingen kompatible lag",itemDetails:"Elementdetaljer",shared:{"public":"Med alle (offentlig)",org:"Med organisasjon",shared:"Med grupper","private":"Med ingen"},resources:"Ressurser",details:"Detaljer",searchResources:"S\u00f8k i ressurser",filter:"Filter",selectAndViewDetails:"Velg ressurser og vis detaljer",viewDetails:"Vis detaljer",viewItemDetailsPage:"Vis siden med elementdetaljer",description:"Beskrivelse",noDescription:"Ingen beskrivelse.",termsOfUse:"Vilk\u00e5r for bruk",
+noTermsOfUse:"Ingen vilk\u00e5r for bruk.",credits:"Credits (tildeling)",noAttribution:"Ingen tildeling.",owner:"Eier",managedBy:"Administreres av",viewCount:"Vis antall",created:"Opprettet",sharedWith:"Delt med",viewLayerUrl:"Vis lag-URL",selected:"Valgt",select:"Velg",timeEnabled:"Tidsaktivert",noCompatibleResources:"Ingen ressurser er kompatible med analysen din.",requestError:"Det oppstod en feil med foresp\u00f8rselen.",addToFavorites:"Legg til i Favoritter",removeFromFavorites:"Fjern fra favoritter",
+isFavorite:"Element i favoritter",notFavorite:"Elementet er ikke i favoritter",viewResults:"Vise resultater",pageRange:"${start} - ${end} av ${total}"});

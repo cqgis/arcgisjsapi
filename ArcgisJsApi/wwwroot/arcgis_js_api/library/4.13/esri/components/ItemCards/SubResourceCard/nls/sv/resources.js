@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.13/esri/copyright.txt for details.
+//>>built
+define({noCompatibleLayers:"Inga kompatibla lager",itemDetails:"Objektinformation",shared:{"public":"Med alla (offentlig)",org:"Med organisation",shared:"Med grupper","private":"Med ingen"},resources:"Resurser",details:"Detaljer",searchResources:"S\u00f6k resurser",filter:"Filter",selectAndViewDetails:"V\u00e4lj resurser och visa information",viewDetails:"Visa information",viewItemDetailsPage:"Visa objektinformationssidan",description:"Beskrivning",noDescription:"Ingen beskrivning.",termsOfUse:"Anv\u00e4ndarvillkor",
+noTermsOfUse:"Inga anv\u00e4ndarvillkor.",credits:"Krediter (attribut)",noAttribution:"Ingen tilldelning av attribut.",owner:"\u00c4gare:",managedBy:"Hanteras av",viewCount:"Visa antal",created:"Skapad",sharedWith:"Delas med",viewLayerUrl:"Visa lager-URL",selected:"Vald",select:"V\u00e4lj",timeEnabled:"Tid aktiverat",noCompatibleResources:"Inga resurser \u00e4r kompatibla med din analys.",requestError:"Det fanns ett fel i f\u00f6rfr\u00e5gan.",addToFavorites:"L\u00e4gg till i favoriter",removeFromFavorites:"Ta bort fr\u00e5n favoriter",
+isFavorite:"Objekt i Favoriter",notFavorite:"Objekt ej i Favoriter",viewResults:"Visa resultat",pageRange:"${start}\u2013${end} av ${total}"});

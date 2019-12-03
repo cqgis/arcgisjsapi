@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.13/esri/copyright.txt for details.
+//>>built
+define({authoritative:"De autoritate",collaboration:"Colaborare",deleted:"\u015eters",deprecated:"Perimat",livingAtlas:"Living Atlas",marketplace:"Marketplace",openData:"Open Data (Date deschise)",premium:"Premium",subscriber:"Abonat",tooltips:{altAuthoritative:"De autoritate: Recomanat de",authoritative:"De autoritate: Recomandat de organiza\u021bia dvs.",collaboration:"Acest reper a fost primit dintr-o colaborare",deprecated:"Perimat: Nu este recomandat pentru utilizare",livingAtlas:"Atlas actualizat: con\u0163inut administrat de Esri",
+marketplace:"Listat pe ArcGIS Marketplace",openData:"Disponibil pentru  uz public",premiumAnon:"Premium: Necesit\u0103 autentificarea cu un abonament ArcGIS Online \u0219i consum\u0103 credite",subscriberAnon:"Abonat: Necesit\u0103 autentificarea cu un abonament ArcGIS Online",premiumPublic:"Premium: Necesit\u0103 un abonament ArcGIS Online \u0219i consum\u0103 credite",subscriberPublic:"Abonat: Necesit\u0103 un abonament ArcGIS Online",premiumOrg:"Premium: Con\u021binut exclusiv pentru abona\u021bi. Consum\u0103 credite.",
+subscriberOrg:"Abonat: Con\u021binut exclusiv pentru abona\u021bi"}});

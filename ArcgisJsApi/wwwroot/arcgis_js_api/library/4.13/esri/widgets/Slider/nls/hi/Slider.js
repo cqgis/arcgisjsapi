@@ -1,0 +1,4 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.13/esri/copyright.txt for details.
+//>>built
+define({widgetLabel:"\u0938\u094d\u0932\u093e\u0907\u0921\u0930",maximumValue:"\u0905\u0927\u093f\u0915\u0924\u092e \u092e\u093e\u0928",minimumValue:"\u0928\u094d\u092f\u0942\u0928\u0924\u092e \u092e\u093e\u0928",rangeMaximum:"\u0905\u0927\u093f\u0915\u0924\u092e \u0938\u0940\u092e\u093e: {value}",rangeMinimum:"\u0928\u094d\u092f\u0942\u0928\u0924\u092e \u0938\u0940\u092e\u093e: {value}",sliderValue:"\u0938\u094d\u0932\u093e\u0907\u0921\u0930 \u092e\u093e\u0928"});

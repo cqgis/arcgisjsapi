@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.13/esri/copyright.txt for details.
+//>>built
+define(["require","exports","../../core/Error","../../core/lang","../../core/maybe"],function(m,e,k,l,f){Object.defineProperty(e,"__esModule",{value:!0});var g=new Set;["bing-maps","open-street-map","tile","vector-tile","web-tile"].forEach(function(a){return g.add(a)});var h=new Set;["feature","tile","vector-tile","web-tile"].forEach(function(a){return h.add(a)});e.getLayerJSON=function(a,c,b){if(!("write"in a&&a.write))return b&&b.messages&&b.messages.push(new k("layer:unsupported","Layers ("+a.title+
+", "+a.id+") of type '"+a.declaredClass+"' cannot be persisted",{layer:a})),null;var d;b.restrictedWebMapWriting?(d="basemap"===b.layerContainerType?g:"operational-layers"===b.layerContainerType?h:null,d=f.isSome(d)?d.has(a.type)||"unknown"===a.type||"unsupported"===a.type:!0):d=!0;if(d)return c={},a.write(c,b)?c:null;f.isSome(c)&&(b=c=l.clone(c),"maxScale"in a&&(b.maxScale=a.maxScale),"minScale"in a&&(b.minScale=a.minScale),b.opacity=a.opacity,b.title=a.title,b.visibility=a.visible);return c}});

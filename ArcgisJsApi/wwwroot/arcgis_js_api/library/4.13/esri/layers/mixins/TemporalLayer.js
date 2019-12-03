@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See https://js.arcgis.com/4.13/esri/copyright.txt for details.
+//>>built
+define("require exports ../../core/tsSupport/declareExtendsHelper ../../core/tsSupport/decorateHelper ../../TimeExtent ../../core/accessorSupport/decorators ../../layers/support/TimeInfo ../support/fieldUtils".split(" "),function(k,b,e,d,f,c,g,h){Object.defineProperty(b,"__esModule",{value:!0});b.TemporalLayer=function(b){return function(b){function a(){var a=null!==b&&b.apply(this,arguments)||this;a.timeExtent=null;a.useViewTime=!0;return a}e(a,b);Object.defineProperty(a.prototype,"timeInfo",{set:function(a){h.fixTimeInfoFields(a,
+this.fields);this._set("timeInfo",a)},enumerable:!0,configurable:!0});d([c.property({type:f,json:{write:!1}})],a.prototype,"timeExtent",void 0);d([c.property({value:null,type:g,json:{write:!0,origins:{"web-scene":{read:!1,write:!1}}}})],a.prototype,"timeInfo",null);d([c.property({type:Boolean,json:{write:!1}})],a.prototype,"useViewTime",void 0);return a=d([c.subclass("esri.layers.mixins.TemporalLayer")],a)}(c.declared(b))}});
